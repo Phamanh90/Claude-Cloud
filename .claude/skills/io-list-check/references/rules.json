@@ -1,0 +1,22 @@
+{
+  "_note": "Cấu hình rule cho io-list-check. Sửa file này để chỉnh ngưỡng/danh mục, không cần sửa code. Xem rules.md.",
+
+  "tag_scope": "document",
+
+  "signal_types_default": ["AI", "AO", "DI", "DO", "PI", "COM-AI", "COM-AO", "COM-DI", "COM-DO", "COM-PI"],
+  "summary_types_hardwired": ["AI", "AO", "DI", "DO", "PI"],
+  "summary_types_comm": ["COM-AI", "COM-AO", "COM-DI", "COM-DO", "COM-PI"],
+
+  "empty_values": ["", "-", "--", "---", "n/a", "na"],
+  "placeholder_values": ["hold", "tbc", "tba", "tbd", "later"],
+
+  "discrete_spec": ["NO", "NC"],
+  "discrete_contact": ["M", "S"],
+  "burnout_values": ["U", "D"],
+
+  "isa": {
+    "tag_regex": "^([A-Z]{1,6})-[A-Z0-9]",
+    "first_letter_modifiers": "DFJKQ",
+    "non_isa_prefixes": ["FACP", "SUB", "UPS", "ICT", "MCC", "VFD", "LCP", "SWBD", "PLC", "RIO", "ESD", "F&G"]
+  }
+}
